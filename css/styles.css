@@ -321,16 +321,21 @@ margin-top: 40px;
     color: #757575;
  }
 
- 
+
  .data-input {
     position: relative;
-    height: 40px;
     margin-left: 40px;
     margin-top: 4px;
     margin-right: 40px;
     border-radius: 4px;
     overflow: hidden;
  }
+ .data-input:hover,
+ .data-input:focus {
+     color: var(--accent-color);
+     border-color: var(--accent-color);
+     cursor: pointer; 
+    }
 .data-input > .input-icon {
 position: absolute;
 top: 50%;
@@ -339,12 +344,26 @@ padding-top: 14px;
 padding-left: 14px;
 }
 
+.input-icon {
+    display: inline-block;
+        width: 11px;
+        height: 11px;
+        fill: currentColor;
+}
+label > input {
+    padding-left: 35px;
+    height: 35px;
+}
  textarea {
     resize: none;
  }
  .checkbox {
     display: block;
     padding-left: 54px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    padding-right: 51px;
  }
  .send {
     width: 200px;
