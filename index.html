@@ -17,7 +17,7 @@
    <header class="header-section">
     <div class="container header-container">
         <a  href="./index.html" class="header-logo">WebStudio</a>
-        <nav>
+        <nav class="header-navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a class="pages current-page" href="./index.html">Studio</a>
@@ -340,6 +340,17 @@
         </li>
     </ul>
 </div>
+<div class="footer-container-right">
+    <form name="subscription-form" autocomplete="on" novalidate>
+    <h4 class="subscription-text">SUBSCRIBE TO THE NEWSLETTER</h4>
+    <label for="email">
+    
+            <input class="email-subscription" type="email" name="email" placeholder="E-mail"/>
+        </label>
+        <button class="subscribe" type="submit">Subscribe <span><svg class="footer-social-media-icon" width="24px" height="24px">
+            <use href="./images/sprite.svg#icon-icon-send"></use>
+        </svg></span></button>
+</div>
 </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -347,33 +358,51 @@
         <button class="modal-button" data-modal-close><svg class="modal-close-icon" width="11px" height="11px">
             <use href="./images/sprite.svg#icon-close"></use>
         </svg></button>
-        <h4>Leave your information and we'll call you back</h4>
-        <form name="signup_form" autocomplete="on" novalidate>
+    <h4 class="form-title">Leave your information and we'll call you back</h4>
+    <form name="signup_form" autocomplete="on" novalidate>
+    <div class="data-input">
+        <label for="name">Name
+        <input id="name" name="name" type="text" />
+        </label>
+        <svg class="input-icon" width="11px" height="11px">
+            <use href="./images/sprite.svg#icon-person"></use></svg>
+    </div>
+    <div class="data-input">
+        <label for="phone">
+            Telephone
         
-            <label for="full-name">Name</label>
-            <input id="full-name" name="full-name" type="text" />
-        
-            <label>
-                Telephone
-                <input type="tel" name="phone_number" />
-            </label>
-        
-            <label>
-                E-mail
-                <input type="email" name="email" />
-            </label>
-        
-            <label>
-                Comments
-                <textarea name="comments" rows="5" placeholder="Enter the text"></textarea>
-            </label>
-        
-            <label>
-                <input type="checkbox" name="#" value="#" checked />
-                I agree with the newsletter and accept the Terms and Conditions
-            </label>
-            <button type="submit">Send</button>
-        </form>
+            <input type="tel" name="phone_number" />
+        </label>
+        <svg class="input-icon" width="11px" height="11px">
+            <use href="./images/sprite.svg#icon-phone-old"></use>
+        </svg>
+    </div>
+    <div class="data-input">
+        <label for="email">
+            E-mail
+           
+            <input type="email" name="email" />
+        </label>
+        <svg class="input-icon" width="11px" height="11px">
+            <use href="./images/sprite.svg#icon-envelope"></use>
+        </svg>
+    </div>
+    <div class="data-input">
+        <label for="comments">
+            Comments
+   
+            <textarea name="comments" rows="5" placeholder="Enter the text"></textarea>
+        </label>
+    </div>
+    <div class="input">
+
+        <label class="checkbox">
+            <input type="checkbox" name="#" value="#" checked />
+            I agree with the newsletter and accept the Terms and Conditions
+        </label>
+        </div>
+        <button class="send" type="submit">Send</button>
+    </form>
     </div>
   </div>
 <script src="./js/modal.js"></script>
