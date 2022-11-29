@@ -332,7 +332,7 @@ margin-top: 40px;
  }
  .data-input:hover,
  .data-input:focus {
-     color: var(--accent-color);
+    color: var(--accent-color);
      border-color: var(--accent-color);
      cursor: pointer; 
     }
@@ -342,13 +342,14 @@ top: 50%;
 transform: translateY(-50%);
 padding-top: 14px;
 padding-left: 14px;
+
 }
 
 .input-icon {
     display: inline-block;
-        width: 11px;
-        height: 11px;
-        fill: currentColor;
+    width: 11px;
+    height: 11px;
+    fill: currentColor;
 }
 label > input {
     padding-left: 35px;
@@ -356,15 +357,18 @@ label > input {
 }
  textarea {
     resize: none;
+    padding: 12px 16px;
  }
  .checkbox {
     display: block;
+    padding-top: 20px;
     padding-left: 54px;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
     padding-right: 51px;
  }
+
  .send {
     width: 200px;
     height: 50px;
@@ -608,9 +612,9 @@ justify-content: center;
     margin: 0 auto;
 display: flex;
 align-items: baseline;
-
-
+  
 }
+
 .footer-container-left {
     display: block;
     margin-right: 70px;
@@ -701,30 +705,34 @@ border-radius: 50%;
 }
 
 .footer-container-right {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 94px;
+    margin-left: auto;
+display: flex;
+    align-items: center;
+   
 }
 .subscription-text {
     color: #ffff;
     font-weight: 700;
     font-size: 14px;
-    line-height: calc(16.41-14);
+    line-height: calc(16.41/14);
     margin-bottom: 20px;
+ 
 }
 .email-subscription {
-    display: flex;
     width: 358px;
     height: 50px;
     border-color: #ffff;
     background-color: transparent;
     border: rgba(0, 0, 0, 0.15) 1px;
     border-radius: 4px;
-   
+   padding-left: 16px;
+  margin-top: 108px;
+ 
+
 }
 .subscribe {
 width: 200px;
-height: 50px;;
+height: 50px;
 font-weight: 700;
 font-size: 16px;
 line-height: calc(30/16);
@@ -734,8 +742,8 @@ color: var(--secondary-title-color);
 background-color: var(--link-color);
 cursor: pointer;
 display: flex;
-margin-top: 20px;
 margin-left: 12px;
+margin-top: 108px;
 justify-content: space-evenly;
 border-radius: 4px;
 padding: 10px 20px;
